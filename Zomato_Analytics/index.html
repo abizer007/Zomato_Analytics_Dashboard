@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zomato Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zomato Analytics Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #222;
+      color: #bbb;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        height: 500px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Zomato Analytics Dashboard</h1>
-    <iframe title="Zomato Dashboard" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZWUxYzBiNzktNDU1ZS00YzM3LWJiYWQtYWU1MzZlMDgyZDg4IiwidCI6ImQxZjE0MzQ4LWYxYjUtNGEwOS1hYzk5LTdlYmYyMTNjYmM4MSIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe>
+
+  <header>
+    <h1>Zomato Analytics Dashboard</h1>
+    <p style="font-weight: 400; font-size: 0.9rem;">Visualize performance, trends, and insights from Zomato's ecosystem</p>
+  </header>
+
+  <div class="container">
+    <iframe 
+      title="Zomato Dashboard" 
+      src="https://app.powerbi.com/view?r=eyJrIjoiZWUxYzBiNzktNDU1ZS00YzM3LWJiYWQtYWU1MzZlMDgyZDg4IiwidCI6ImQxZjE0MzQ4LWYxYjUtNGEwOS1hYzk5LTdlYmYyMTNjYmM4MSIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true"
+      allowfullscreen="true">
+    </iframe>
+  </div>
+
+  <footer style="text-align: center; padding: 1rem; background-color: #222; color: #bbb; font-size: 0.9rem;">
+    <p>© 2025 Zomato Analytics – An academic project by B.Tech CSBS students 🧑‍💻<br>
+    at Mukesh Patel School of Technology Management & Engineering, Mumbai.</p>
+    <p>Team: Abizer Masavi, Subham Mohapatra, Arzaan Mulla.</p>
+    <p>All rights reserved.</p>
+  </footer>  
+
 </body>
 </html>
+
