@@ -5,7 +5,7 @@
 > **Team Members:**  
 > - E034 – Abizer Masavi  
 > - E037 – Subham Mohapatra  
-> - E039 – Arzaan Mulla  
+> - E039 – Arzaan Mulla 
 
 ---
 
