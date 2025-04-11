@@ -144,8 +144,6 @@ with open("insert_restaurants.sql", "w", encoding="utf-8") as f:
 
 ```
 
-Full code in: [`scripts/generate_insert_queries.py`](#)
-
 ---
 
 ## 🧪 Learning Outcomes
