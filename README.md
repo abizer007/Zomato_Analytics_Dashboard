@@ -36,8 +36,8 @@ The objective was to derive actionable insights into:
 
 ## 🔗 Key Links
 
-- 📂 **GitHub Repository**: [github.com/your-org/zomato-analytics](#) *(Replace with real link)*    
-- 📊 **Live Power BI Dashboard**: https://abizer007.github.io/Zomato_Analytics_Dashboard/ *(Public Power BI link)*
+- 📂 **GitHub Repository**: https://github.com/abizer007/Zomato_Analytics_Dashboard/tree/main
+- 📊 **Live Power BI Dashboard**: https://abizer007.github.io/Zomato_Analytics_Dashboard/ 
 
 ---
 
@@ -48,7 +48,11 @@ The objective was to derive actionable insights into:
 - Complies with **1NF, 2NF, 3NF**
 - Supports **foreign keys**, **one-to-many**, and **composite relationships**
 
-> 📎 ER Diagram: Available in `ERD.drawio` and in `/screenshots/erd.png`
+> 📎 ER Diagram:
+>
+> 
+![image](https://github.com/user-attachments/assets/c05327f2-a0b0-48ca-a66d-c65780dd44a1)
+
 
 ---
 
@@ -77,7 +81,7 @@ The objective was to derive actionable insights into:
 
 ## 🖼️ Screenshots
 
-> Please replace `#` with actual image file paths from `/screenshots/` directory
+
 
 ### 1️⃣ Index Page  
 ![image](https://github.com/user-attachments/assets/80800781-8b28-4ebc-a84d-a1a46babe014)
@@ -184,5 +188,11 @@ For queries or collaborations, feel free to reach out:
 - **Arzaan** – arzaanm2005@gmail.com
 
 ---
+
+🎥 **Power BI Reference Source**  
+Our Power BI dashboard development was greatly guided by the following tutorial:  
+[📺 Power BI Dashboard Tutorial for Beginners – by Learn with Whiteboard](https://youtu.be/if_ES7hC9Bc?si=ju2LM9YpdTG9zb7M)
+
+
 
 > **“Data is only as powerful as the decisions it fuels.”**
