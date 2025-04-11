@@ -37,7 +37,7 @@ The objective was to derive actionable insights into:
 ## 🔗 Key Links
 
 - 📂 **GitHub Repository**: [github.com/your-org/zomato-analytics](#) *(Replace with real link)*    
-- 📊 **Live Power BI Dashboard**: [https://abizer007.github.io/Zomato_Analytics_Dashboard/](#) *(Public Power BI link)*
+- 📊 **Live Power BI Dashboard**: https://abizer007.github.io/Zomato_Analytics_Dashboard/ *(Public Power BI link)*
 
 ---
 
