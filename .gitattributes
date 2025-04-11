@@ -1,8 +1,11 @@
 *.sql linguist-detectable=true
 *.sql linguist-language=SQL
+*.sql linguist-vendored=false
 
 *.py linguist-detectable=true
 *.py linguist-language=Python
+*.py linguist-vendored=false
 
 *.html linguist-detectable=true
 *.html linguist-language=HTML
+*.html linguist-vendored=false
