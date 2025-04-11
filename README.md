@@ -36,8 +36,7 @@ The objective was to derive actionable insights into:
 
 ## 🔗 Key Links
 
-- 📂 **GitHub Repository**: [github.com/your-org/zomato-analytics](#) *(Replace with real link)*  
-- 🧩 **PostgreSQL SQL Dump**: [`zomato_schema.sql`](#) *(Schema + Insert Queries)*  
+- 📂 **GitHub Repository**: [github.com/your-org/zomato-analytics](#) *(Replace with real link)*    
 - 📊 **Live Power BI Dashboard**: [View Interactive Dashboard](#) *(Public Power BI link)*
 
 ---
@@ -62,7 +61,7 @@ The objective was to derive actionable insights into:
 - 📉 High-rated but underperforming restaurants  
 - 📊 Sales trend correlation using `CORR()` over time  
 
-> ✅ Full SQL query set: [`analytics_queries.sql`](#)
+> ✅ Full SQL query set
 
 ---
 
@@ -80,17 +79,21 @@ The objective was to derive actionable insights into:
 
 > Please replace `#` with actual image file paths from `/screenshots/` directory
 
-### 1️⃣ Dashboard Home  
-![Dashboard Home](#)
+### 1️⃣ Index Page  
+![image](https://github.com/user-attachments/assets/80800781-8b28-4ebc-a84d-a1a46babe014)
+
 
 ### 2️⃣ Year-wise Sales & User Trends  
-![Sales Trend](#)
+![image](https://github.com/user-attachments/assets/233f466b-7874-4ea6-b058-d57d867ea816)
 
-### 3️⃣ City-Wise Performance & Ratings  
-![City Metrics](#)
 
-### 4️⃣ Cuisine & Order Patterns  
-![Cuisines](#)
+### 3️⃣ User-Wise Performance & Ratings  
+![image](https://github.com/user-attachments/assets/cbed04c3-cb22-4c54-a67c-c03ded75928b)
+
+
+### 4️⃣ City Performance 
+![image](https://github.com/user-attachments/assets/7bd89598-03a3-4f95-93d4-4e60e11dbf0f)
+
 
 ---
 
@@ -100,10 +103,45 @@ We used Python to generate SQL `INSERT` statements dynamically from Excel:
 
 ```python
 import pandas as pd
-df = pd.read_excel("restaurants.xlsx")
-def escape(val): return f"'{str(val).replace("'", "''")}'" if pd.notna(val) else "NULL"
+
+# Load Excel file
+df = pd.read_excel("restaurant.xlsx")
+
+# Escape single quotes for SQL
+def escape_sql(value):
+    if pd.isna(value):
+        return "NULL"
+    value = str(value).replace("'", "''")
+    return f"'{value}'"
+
+# Table name
+table_name = "restaurants"
+
+# Create table SQL
+create_table = f"""
+CREATE TABLE {table_name} (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    country TEXT,
+    city TEXT,
+    rating TEXT,
+    rating_count TEXT,
+    cuisine TEXT,
+    link TEXT,
+    address TEXT
+);
+"""
+
+# Insert rows
+insert_lines = []
 for _, row in df.iterrows():
-    print(f"INSERT INTO restaurants (...) VALUES ({...});")
+    values = ", ".join(escape_sql(row[col]) for col in df.columns)
+    insert_lines.append(f"INSERT INTO {table_name} VALUES ({values});")
+
+# Save to file
+with open("insert_restaurants.sql", "w", encoding="utf-8") as f:
+    f.write(create_table + "\n" + "\n".join(insert_lines))
+
 ```
 
 Full code in: [`scripts/generate_insert_queries.py`](#)
@@ -143,9 +181,9 @@ This repository is ideal for:
 
 For queries or collaborations, feel free to reach out:
 
-- **Abizer** – abizer.masavi@example.com  
-- **Subham** – subham.mohapatra@example.com  
-- **Arzaan** – arzaan.mulla@example.com  
+- **Abizer** – abizer.masavi@gmail.com 
+- **Subham** – subham.mohapatra0905@gmail.com
+- **Arzaan** – arzaanm2005@gmail.com
 
 ---
 
