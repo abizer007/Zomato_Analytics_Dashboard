@@ -51,7 +51,7 @@ The objective was to derive actionable insights into:
 > 📎 ER Diagram:
 >
 > 
-![image](https://github.com/user-attachments/assets/c05327f2-a0b0-48ca-a66d-c65780dd44a1)
+<img src="https://github.com/user-attachments/assets/c05327f2-a0b0-48ca-a66d-c65780dd44a1" width="400" height="500"/>
 
 
 ---
