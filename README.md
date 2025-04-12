@@ -56,6 +56,40 @@ The objective was to derive actionable insights into:
 
 ---
 
+## 🖥️ PostgreSQL Server Setup & Execution Snapshots
+
+To manage our backend database, we used **PostgreSQL** as the primary engine and **pgAdmin4** for GUI-based interaction. This section highlights the actual execution environment and setup used during development:
+
+### 🔧 Server Configuration
+
+- **Host**: `localhost`
+- **Port**: `5432`
+- **User**: `postgres`
+- **Database Name**: `zomato_analytics`
+- **Authentication**: Password-protected (secured with role-based privileges)
+
+### 📁 Schema Execution in pgAdmin
+
+#### 📌 pgAdmin4 Dashboard  
+*This image displays the pgAdmin4 interface where all tables were created, queried, and verified.*
+
+![image](https://github.com/user-attachments/assets/abd7201a-aebb-4121-8a9a-aa6c94aace9d)
+
+#### 📌 Table Visualization  
+*Visual representation of inserted rows in `restaurants`, `orders`, `users`, and `menu_cuisine`.*
+
+![image](https://github.com/user-attachments/assets/1080c218-92ef-4b22-91e8-ae20c6a5a528)
+
+#### 📌 Live Query Execution  
+*Example of an advanced query using CTE and CORR() to analyze sales trend correlation.*
+
+![image](https://github.com/user-attachments/assets/54fc83a2-fdde-4f97-8a51-676d71bbb712)
+
+
+![image](https://github.com/user-attachments/assets/757541e3-d2a4-4bf2-ada4-89ad6758aec5)
+
+---
+
 ## 🧮 Advanced SQL Query Highlights
 
 - 🥇 Top-rated restaurants per city  
