@@ -4,7 +4,6 @@
 > **Academic Year: 2024–2025**  
 > **Team Members:**  
 > - E034 – Abizer Masavi  
-> - E037 – Subham Mohapatra  
 > - E039 – Arzaan Mulla 
 
 ---
@@ -218,7 +217,6 @@ This repository is ideal for:
 For queries or collaborations, feel free to reach out:
 
 - **Abizer** – abizer.masavi@gmail.com 
-- **Subham** – subham.mohapatra0905@gmail.com
 - **Arzaan** – arzaanm2005@gmail.com
 
 ---
